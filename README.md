@@ -1,4 +1,4 @@
-#Camera fork from [CameView](https://github.com/LivotovLabs/CamView)
+#Camera fork from [CAMView](https://github.com/LivotovLabs/CamView)
 ===
 [![Badge](http://www.libtastic.com/static/osbadges/282.png)](http://www.libtastic.com/technology/282/)
 
