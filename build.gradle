@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion android_sdk_compile_version.toInteger()
+    buildToolsVersion android_buildtools_version
+
+    defaultConfig {
+        minSdkVersion android_sdk_min_version.toInteger()
+        targetSdkVersion android_sdk_compile_version.toInteger()
+        versionCode 1
+        versionName 'CAMView'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile('com.google.zxing:core:3.2.1') { transitive = true }
+}
+
